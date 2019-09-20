@@ -1,4 +1,4 @@
-[
+var glossary = [
   "ancestors",
   "Arctica",
   "art bike",
@@ -143,4 +143,4 @@
   "civic responsibility",
   "participation",
   "immediacy"
-]
+];

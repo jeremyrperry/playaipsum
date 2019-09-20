@@ -1,5 +1,4 @@
-var playaipsum = {
-  glossary: [],
+ playaipsum = {
 
   capitalize: function(string){
     return string[0].toUpperCase().toUpperCase() + string.slice(1);
@@ -17,7 +16,7 @@ var playaipsum = {
       numberOfTerms++;
     }
     while(terms.length < numberOfTerms){
-      var term = this.glossary[this.getRandomNumber(0, this.glossary.length - 1)];
+      var term = glossary[this.getRandomNumber(0, glossary.length - 1)];
       if(!terms.length){
         term = this.capitalize(term);
       }
@@ -44,16 +43,12 @@ var playaipsum = {
   init: function(){
     var self = this;
     this.generate();
-    $.get('js/glossary.json', function(glossary){
-      self.glossary = glossary;
-      self.generate();
-    });
     $('#ipsum_form').submit(function(evt){
       evt.preventDefault();
       self.generate(parseInt($('#paragraphs').val()));
     });
   }
-}
+};
 
 $(document).ready(function(){
   playaipsum.init();
