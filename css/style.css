@@ -1,0 +1,14 @@
+body{
+  	color: #A9A9A9;
+	background-color: black;
+	font-family: Helvetica;
+	background-image: url(../img/splash-img.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-position: top center;
+}
+
+header, #bm_logo{
+  	text-align: center;
+}
