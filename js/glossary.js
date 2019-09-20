@@ -142,5 +142,7 @@ var glossary = [
   "communal effort",
   "civic responsibility",
   "participation",
-  "immediacy"
+  "immediacy",
+  "acid trip",
+  "fuck your burn"
 ];
