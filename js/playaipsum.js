@@ -1,4 +1,4 @@
- playaipsum = {
+ var playaipsum = {
 
   capitalize: function(string){
     return string[0].toUpperCase().toUpperCase() + string.slice(1);
@@ -27,9 +27,12 @@
     return terms.join(" ") + ".";
   },
 
-  generate: function(paragraphs){
+  generate: function(initialParagraphs){
     var ipsum = [];
-    paragraphs = (typeof(paragraphs) == 'number'  && paragraphs > 0 && paragraphs <= 100 ? paragraphs : 5);
+    var paragraphs = (typeof(initialParagraphs) == 'number'  && initialParagraphs > 0 && initialParagraphs <= 100 ? initialParagraphs : 5);
+    if(paragraphs != initialParagraphs){
+      $('#paragraphs').val(paragraphs);
+    }
     for(var i=0; i<paragraphs; i++){
       var sentences = [];
       for(var s=0; s<5; s++){

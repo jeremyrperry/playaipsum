@@ -144,5 +144,6 @@ var glossary = [
   "participation",
   "immediacy",
   "acid trip",
-  "fuck your burn"
+  "fuck your burn",
+  "Jungo Road"
 ];
